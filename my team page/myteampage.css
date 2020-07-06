@@ -111,16 +111,16 @@ main .emp .name{
 	header{
 		display: flex;
 		flex-direction: row;
-		margin-bottom: 8%;		
+		margin-bottom: 8%;
 	}
 
 	header .title{
-		width: 50%;
+		white-space: nowrap;
 		font-size: xx-large;
 	}
-
+	
 	.who-we-are{
-		width: 30%;
+		margin-left: 20%;
 	}
 
 	.who-we-are h5{
@@ -132,6 +132,7 @@ main .emp .name{
 	.who-we-are p{
 		font-size: 1.2em;
 		line-height: 1.5em;
+		width: 80%;
 	}
 
 	main{
