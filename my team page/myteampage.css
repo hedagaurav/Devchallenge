@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: grey;
+	font-family: sans-serif;
+}
+body{
+	/* border: 1px solid green; */
+	
+}
+
+/* for mobile screen */
+@media screen and (min-width: 200px) and (max-width: 780px) {
+	body{
+		background-color: lightblue;
+		margin: 5% 3%;
+	}
+
+	header{
+		/* grid-template-columns: repeat(2,1fr); */
+		/* grid-template-rows: auto; */
+		margin-bottom: 15%;
+	}
+
+	.who-we-are{
+
+	}
+
+	.who-we-are h5{
+		font-size: 17px;
+		text-transform: uppercase;
+		margin-bottom: 2%;
+	}
+
+	.who-we-are p{
+
+	}
+
+	main{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3,1fr);
+
+	}
+	main .m-top{
+		margin-top: 50px;
+	}
+
+	main .m-bot{
+		margin-bottom: 50px;
+	}
+
+	main .emp-img{
+		/* display: inline-block; */
+		/* width: 40%; */
+	}
+
+	main .emp-img img{
+		width: 80%;
+	}
+
+	footer{
+		text-align: center;
+
+	}
+}
+
+/* for desktop screen */
+@media screen and (min-width: 780px) {
+	body{
+		margin: 7% 14% 2% 14%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 8%;		
+	}
+
+	header .title{
+		width: 50%;
+		font-size: xx-large;
+	}
+
+	.who-we-are{
+		width: 30%;
+	}
+
+	.who-we-are h5{
+		font-size: 1.2em;
+		padding-bottom: 2%;
+		text-transform: uppercase;
+	}
+
+	.who-we-are p{
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	main{
+		display: grid;
+		grid-template-columns: repeat(3,minmax(150px,auto)); 
+		grid-template-rows: repeat(2,1fr);
+		row-gap: 2%;
+		column-gap: 5%;
+		margin-bottom: 10%;
+	}
+
+	main .d-top{
+		margin-top: 30%;
+	}
+
+	main .d-bot{
+		margin-bottom: 30%;
+	}
+
+	main .des-img{
+		display: flex;
+		flex-direction: row;
+	}
+
+	main .emp .emp-img{
+		margin-right: 3%;
+		width: 75%;
+	}
+
+	main .emp .emp-img img{
+		width: 100%;
+	}
+
+	main .emp .designation{
+		text-transform: uppercase;
+		font-size: .7em;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		writing-mode: vertical-rl;
+		white-space: nowrap;
+		display: block;
+	}
+
+	main .emp .name{
+		margin-top: 3%;
+		font-size: 1.2em;
+		font-weight: bold;
+		font-family: sans-serif;
+		text-transform: capitalize;
+	}
+
+	footer{
+		text-align: center;
+		font-size: 1em;
+	}
+}
