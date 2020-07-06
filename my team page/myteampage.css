@@ -7,59 +7,91 @@ a{
 	color: grey;
 	font-family: sans-serif;
 }
-body{
-	/* border: 1px solid green; */
-	
+
+.who-we-are{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+main .emp .des-img .designation{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .emp .name{
+	font-family: sans-serif;
+}
 /* for mobile screen */
 @media screen and (min-width: 200px) and (max-width: 780px) {
 	body{
-		background-color: lightblue;
-		margin: 5% 3%;
+		margin: 6% 3%;
 	}
 
 	header{
-		/* grid-template-columns: repeat(2,1fr); */
-		/* grid-template-rows: auto; */
 		margin-bottom: 15%;
 	}
 
-	.who-we-are{
-
+	header .title{
+		font-size: 2.2em;
+		margin-bottom: 13%;
 	}
 
 	.who-we-are h5{
-		font-size: 17px;
+		font-size: 1.2em;
 		text-transform: uppercase;
-		margin-bottom: 2%;
+		margin-bottom: 5%;
+		
 	}
 
 	.who-we-are p{
-
+		font-size: 1.1em;
+		line-height: 1.5em;
+		width: 90%;
 	}
 
 	main{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3,1fr);
-
+		column-gap: 5%;
+		row-gap: 1%;
+		margin: 0 2%;
+		margin-bottom: 20%;
 	}
 	main .m-top{
-		margin-top: 50px;
+		margin-top: 25%;
 	}
 
 	main .m-bot{
-		margin-bottom: 50px;
+		margin-bottom: 25%;
 	}
 
 	main .emp-img{
-		/* display: inline-block; */
-		/* width: 40%; */
+		min-width: 110px;
+		max-width: 300px;
+		margin-right: 2%;
 	}
 
 	main .emp-img img{
-		width: 80%;
+		width: 100%;
+	}
+
+	main .emp .des-img{
+		display: flex;
+		flex-direction: row;
+	}
+
+	main .emp .des-img .designation{
+		text-transform: uppercase;
+		font-size: .7em;
+		writing-mode: vertical-rl;
+		white-space: nowrap;
+		display: block;
+	}
+
+	main .emp .name{
+		font-size: 1.1em;
+		font-weight: bold;
+		
+		text-transform: capitalize;
 	}
 
 	footer{
@@ -136,7 +168,6 @@ body{
 	main .emp .designation{
 		text-transform: uppercase;
 		font-size: .7em;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		writing-mode: vertical-rl;
 		white-space: nowrap;
 		display: block;
@@ -146,7 +177,6 @@ body{
 		margin-top: 3%;
 		font-size: 1.2em;
 		font-weight: bold;
-		font-family: sans-serif;
 		text-transform: capitalize;
 	}
 
