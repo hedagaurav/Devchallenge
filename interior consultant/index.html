@@ -12,16 +12,19 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	<link rel="stylesheet" href="interiorconsultant.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand brand">This Interior</a>
-			<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="material-icons">menu</span>
-			</button>
+			<div>
+				<a class="navbar-brand brand">This Interior</a>
+				<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<!-- <span class="material-icons">menu</span> -->
+					<span><img src="images/menu.png" alt=""></span>
+				</button>
+			</div>
 			<div id="my-nav" class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
@@ -42,33 +45,37 @@
 	</header>
 	
 	<main>
-		<div>
-			<h1>Mordern Interior</h1>
+		<div class="left">
+			<h1>Mordern interior</h1>
 			<p>
 				A full-Service residential & <br>commercial interior design and <br>staging company offering<br> professional organizing & <br>eco-services.
 			</p>
 			<a href="#">Read More 
-				<span class="material-icons">
+				<!-- <span class="material-icons">
 					arrow_right_alt
-				</span>
+				</span> -->
+				<!-- <span><img src="images/right_arrow_small.png" alt="right_arrow"></span> -->
 			</a>
 		</div>
-		<div>
+		<div class="right">
 			<div class="image">
 				<img src="images/photo1.png" alt="photo1">
 			</div>
-			<div>
-				<div>
-					<img src="images/photo2.png" alt="photo2">
+			<div class="card">
+				<div class="card-detail">
+					<div class="card-image">
+						<img src="images/photo2.png" alt="photo2">
+					</div>
+					<div class="name">
+						<p>Aliza Webber</p>
+						<p>Interior designer</p>
+					</div>
 				</div>
-				<div>
-					<p>Aliza Weber</p>
-					<p>Interior designer</p>
-					<h3>Designed in 2020 by Aliza Weber</h3>
-				</div>
+				<h3 class="designer">Designed in 2020 by <br>Aliza Webber</h3>
 			</div>
 		</div>
 	</main>
+	
 	<footer>
 		<a href="https://devchallenges.io/profile/WAZpzxiFEMzadf3Xd4nS">Gaurav Heda @ DevChallenges.io</a>
 	</footer>
